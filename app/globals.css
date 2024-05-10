@@ -1,33 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .text {
+    @apply text-white font-light text-xl mdl:text-lg md:text-lg sm:text-base;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .textSecondary {
+    @apply text-textGray font-light text-lg mdl:text-base md:text-base sm:text-sm;
+  }
+  .bg-text {
+    @apply bg-primaryGray opacity-80;
+  }
+  .header {
+    @apply text-primary text-2xl font-medium;
+  }
+  .btn {
+    @apply  text-white transition-all duration-500 bg-gradient-to-r from-primary via-primary to-secondary bg-size-200 bg-pos-100 hover:bg-pos-0 hover:scale-105
   }
 }

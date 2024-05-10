@@ -1,0 +1,54 @@
+.linearWipe {
+    text-align: center;
+    background: linear-gradient(to right, #9ECF8C , #79BD61 40%, #599B41 , #9ECF8C);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.button {
+    background: linear-gradient(to right, #427330 , #599B41, #79BD61);
+
+    height: 45px;
+    width: 180px;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: red; /* Hintergrundfarbe beim Überfahren mit der Maus */
+  }
+
+/* Beispiel CSS */
+.customCheckbox {
+    /* Verhindere den Standard-Hintergrund der Checkbox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    /* Setze die gewünschte Hintergrundfarbe */
+    background-color: transparent;
+  
+    /* Füge einen Rahmen zur Checkbox hinzu */
+    border: 2px solid #ccc;
+  
+    /* Füge eine Größe zur Checkbox hinzu */
+    width: 20px;
+    height: 20px;
+  
+    /* Füge abgerundete Ecken hinzu */
+    border-radius: 4px;
+  }
+  
+  /* Stile für die Checkbox, wenn sie ausgewählt ist */
+  .customCheckbox:checked {
+    /* Ändere die Hintergrundfarbe, wenn die Checkbox ausgewählt ist */
+    background-color: #4CAF50;
+  }
