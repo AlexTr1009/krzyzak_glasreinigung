@@ -1,6 +1,6 @@
 .linearWipe {
     text-align: center;
-    background: linear-gradient(to right, #9ECF8C , #79BD61 40%, #599B41 , #9ECF8C);
+    background: linear-gradient(to right, #d8f7cd , #79BD61 40%, #599B41 , #ffffff);
     background-size: 200% auto;
     color: transparent;
     -webkit-background-clip: text;

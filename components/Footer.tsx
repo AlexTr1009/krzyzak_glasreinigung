@@ -10,7 +10,7 @@ export function Footer() {
     const phoneNumber = '01773133857';
     const message = 'Hallo! Ich möchte mehr Informationen erhalten.';
     const encodedMessage = encodeURIComponent(message);
-    const url = `https://wa.me/${phoneNumber}`;
+    const url = 'https://wa.me/491773133857';
     window.open(url, '_blank');
   };
 
